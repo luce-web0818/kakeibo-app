@@ -31,13 +31,9 @@ venv\Scripts\activate
 pip install django
 python manage.py runserver
 
-##　アプリ画面
+## アプリ画面
 
-###ホーム画面
-![ホーム画面](https://github.com/user-attachments/assets/75590d9d-d4e4-4b05-8e1f-bf3ba0114ab2）
+![支出一覧](https://github.com/user-attachments/assets/d04d1d5b-0f1a-43db-b42c-08d68adb6e04)
 
-### 支出一覧画面
-![支出一覧画面](https://github.com/user-attachments/assets/55c0aad5-9285-43c2-be19-6b0124ba6357）
 
-（https://github.com/user-attachments/assets/1340a51e-3ee0-4c57-9f4f-f3fc09083511）
 
