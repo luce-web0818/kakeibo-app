@@ -23,7 +23,10 @@
 
 ## アプリ画面
 
+### ホーム画面
 ![ホーム画面](https://github.com/user-attachments/assets/4afbbfac-9b3b-469d-813e-4ff67daabc7b)
+
+### 支出一覧画面
 ![支出一覧](https://github.com/user-attachments/assets/573a5097-db38-4017-8a3f-5679fa169d80)
 
 
