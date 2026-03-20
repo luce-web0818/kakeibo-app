@@ -1,0 +1,31 @@
+{% extends 'expenses/base.html' %}
+
+{% block title %}{% if expense %}支出編集{% else %}支出追加{% endif %}{% endblock %}
+
+{% block content %}
+<h1>{% if expense %}支出編集{% else %}支出追加{% endif %}</h1>
+
+<form method="POST">
+    {% csrf_token %}
+
+    <div class="form-group">
+        <label for="date">日付</label>
+        <input type="date" id="date" name="date" value="{{ expense.date|date:'Y-m-d' }}">
+    </div>
+
+    <div class="form-group">
+        <label for="category">カテゴリ</label>
+        <input type="text" id="category" name="category" value="{{ expense.category|default:'' }}">
+    </div>
+
+    <div class="form-group">
+        <label for="amount">金額</label>
+        <input type="number" id="amount" name="amount" value="{{ expense.amount|default:'' }}">
+    </div>
+
+    <div class="actions">
+        <button class="button submit-button" type="submit">保存</button>
+        <a class="button button-back" href="/expenses/">支出一覧へ戻る</a>
+    </div>
+</form>
+{% endblock %}

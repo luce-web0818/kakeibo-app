@@ -1,0 +1,13 @@
+{% extends 'expenses/base.html' %}
+
+{% block title %}ホーム{% endblock %}
+
+{% block content %}
+<h1>家計簿アプリ</h1>
+<p>毎日の支出をやさしく管理するシンプル家計簿です。</p>
+
+<div class="actions">
+    <a class="button button-add" href="/expenses/">支出一覧を見る</a>
+    <a class="button button-back" href="/expenses/add/">支出を追加する</a>
+</div>
+{% endblock %}

@@ -1,0 +1,55 @@
+{% extends 'expenses/base.html' %}
+
+{% block title %}支出一覧{% endblock %}
+
+{% block content %}
+<h1>支出一覧</h1>
+
+<div class="summary-card">
+    <div class="summary-title">今月の支出合計({{ expenses|length }}件)</div>
+    <div class="summary-amount">￥{{ total_amount }}</div>
+</div>
+
+{% if expenses %}
+<table>
+    <tr>
+        <th>日付</th>
+        <th>カテゴリ</th>
+        <th>金額</th>
+        <th>操作</th>
+    </tr>
+    {% for expense in expenses %}
+    <tr>
+        <td class="date-cell">{{ expense.date }}</td>
+        <td>
+            {% if expense.category == '食費' %}
+                <span class="category-badge category-food">{{ expense.category }}</span>
+            {% elif expense.category == '日用品' %}
+                <span class="category-badge category-daily">{{ expense.category }}</span>
+            {% elif expense.category == '交通費' %}
+                <span class="category-badge category-transport">{{ expense.category }}</span>
+            {% else %}
+                <span class="category-badge category-other">{{ expense.category }}</span>
+            {% endif %}
+        </td>
+        <td class="amount-cell">￥{{ expense.amount }}円</td>
+        <td>
+            <a class="button-edit" href="/expenses/edit/{{ expense.id }}/">編集</a>
+            <a class="button-delete" 
+               href="/expenses/delete/{{ expense.id }}/"
+               onclick="return confirm('本当に削除しますか？')">
+               削除
+            </a>
+        </td>
+    </tr>
+    {% endfor %}
+</table>
+{% else %}
+<p class="empty-message">まだ支出データがありません。</p>
+{% endif %}
+
+<div class="actions">
+    <a class="button button-back" href="/">ホームへ戻る</a>
+    <a class="button button-add" href="/expenses/add/">＋ 支出を追加</a>
+</div>
+{% endblock %}

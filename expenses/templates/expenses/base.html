@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}家計簿アプリ{% endblock %}</title>
+    <style>
+    body {
+        margin: 0;
+        font-family: "Yu Gothic", "Meiryo", sans-serif;
+        background: linear-gradient(135deg, #fdf2f8, #f3e8ff, #eef2ff);
+        color: #333;
+    }
+
+    .container {
+        max-width: 900px;
+        margin: 40px auto;
+        padding: 20px;
+    }
+
+    .card {
+        background: #ffffff;
+        border-radius: 20px;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+        padding: 30px;
+    }
+
+    h1 {
+        margin-top: 0;
+        margin-bottom: 24px;
+        font-size: 36px;
+        color: #7c3aed;
+    }
+
+    .button {
+        display: inline-block;
+        padding: 12px 18px;
+        border-radius: 12px;
+        text-decoration: none;
+        font-weight: bold;
+        border: none;
+        cursor: pointer;
+        font-size: 14px;
+    }
+
+    .button-add {
+        background: #ec4899;
+        color: white;
+    }
+
+    .button-back {
+        background: #e5e7eb;
+        color: #333;
+    }
+
+    .button-edit {
+        display: inline-block;
+        background: #dbeafe;
+        color: #1d4ed8;
+        padding: 8px 12px;
+        border-radius: 10px;
+        text-decoration: none;
+        font-weight: bold;
+        margin-right: 8px;
+    }
+
+    .button-delete {
+        display: inline-block;
+        background: #fee2e2;
+        color: #dc2626;
+        padding: 8px 12px;
+        border-radius: 10px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        overflow: hidden;
+        border-radius: 16px;
+        background: #fff;
+    }
+
+    th {
+        background: #f5f3ff;
+        color: #5b21b6;
+        padding: 14px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    td {
+        padding: 14px;
+        border-top: 1px solid #f1f5f9;
+        vertical-align: middle;
+    }
+
+    tr:hover {
+        background: #faf5ff;
+    }
+
+    .actions {
+        margin-top: 24px;
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+    }
+
+    .form-group {
+        margin-bottom: 18px;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: bold;
+        color: #6b21a8;
+    }
+
+    input {
+        width: 100%;
+        max-width: 360px;
+        padding: 12px;
+        border: 1px solid #d8b4fe;
+        border-radius: 12px;
+        font-size: 14px;
+        box-sizing: border-box;
+    }
+
+    .submit-button {
+        background: #8b5cf6;
+        color: white;
+    }
+
+    .empty-message {
+        padding: 20px;
+        background: #faf5ff;
+        border-radius: 14px;
+        color: #6b21a8;
+    }
+
+    .summary-card {
+        background: linear-gradient(135deg, #ede9fe, #fce7f3);
+        border-radius: 18px;
+        padding: 20px;
+        margin-bottom: 24px;
+    }
+
+    .summary-title {
+        font-size: 14px;
+        color: #6b21a8;
+        margin-bottom: 8px;
+        font-weight: bold;
+    }
+
+    .summary-amount {
+        font-size: 28px;
+        font-weight: bold;
+        color: #7c3aed;
+    }
+
+    .category-badge {
+        display: inline-block;
+        padding: 6px 12px;
+        border-radius: 999px;
+        font-size: 13px;
+        font-weight: bold;
+    }
+
+    .category-food {
+        background: #fee2e2;
+        color: #b91c1c;
+    }
+
+    .category-daily {
+        background: #dbeafe;
+        color: #1d4ed8;
+    }
+
+    .category-transport {
+        background: #dcfce7;
+        color: #15803d;
+    }
+
+    .category-other {
+        background: #f3f4f6;
+        color: #374151;
+    }
+
+    .amount-cell {
+        font-weight: bold;
+        text-align: right;
+    }
+
+    .date-cell {
+        color: #6b7280;
+        white-space: nowrap;
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            {% block content %}
+            {% endblock %}
+        </div>
+    </div>
+</body>
+</html>
