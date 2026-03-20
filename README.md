@@ -21,6 +21,11 @@
 - 編集・削除機能
 - グラフ表示
 
+## アプリ画面
+
+![ホーム画面](https://github.com/user-attachments/assets/4afbbfac-9b3b-469d-813e-4ff67daabc7b)
+
+
 ## 環境構築・起動方法
 
 ```bash
@@ -30,8 +35,6 @@ python -m venv venv
 venv\Scripts\activate
 pip install django
 python manage.py runserver
-
-## アプリ画面
 
 
 
