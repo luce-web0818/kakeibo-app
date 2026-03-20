@@ -39,4 +39,5 @@ python manage.py runserver
 ### 支出一覧画面
 ![支出一覧画面](https://github.com/user-attachments/assets/55c0aad5-9285-43c2-be19-6b0124ba6357）
 
+（https://github.com/user-attachments/assets/1340a51e-3ee0-4c57-9f4f-f3fc09083511）
 
