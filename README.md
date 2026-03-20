@@ -31,8 +31,9 @@ venv\Scripts\activate
 pip install django
 python manage.py runserver
 
-## アプリ画面
+##　アプリ画面
 
-![ホーム画面](ここに画像のURL)<img width="1412" height="914" alt="スクリーンショット 2026-03-20 172239" src="https://github.com/user-attachments/assets/f71f52df-5579-4319-a7fe-559e4dbbeeef" />
-<img width="1507" height="616" alt="スクリーンショット 2026-03-20 171144" src="https://github.com/user-attachments/assets/a9dc5f03-4033-45b0-a580-a16430215630" />
+！【ホーム画面】（https://github.com/user-attachments/assets/75590d9d-d4e4-4b05-8e1f-bf3ba0114ab2）
+！【支出一覧画面】（https://github.com/user-attachments/assets/55c0aad5-9285-43c2-be19-6b0124ba6357）
+
 
