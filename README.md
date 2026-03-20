@@ -33,7 +33,6 @@ python manage.py runserver
 
 ## アプリ画面
 
-![支出一覧](https://github.com/user-attachments/assets/d04d1d5b-0f1a-43db-b42c-08d68adb6e04)
 
 
 
