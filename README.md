@@ -37,6 +37,10 @@ Python(Django)で作成した家計簿WEBアプリです。
 ### 支出一覧画面
 ![支出一覧](https://github.com/user-attachments/assets/573a5097-db38-4017-8a3f-5679fa169d80)
 
+### 入力画面
+![入力画面]<https://github.com/user-attachments/assets/e488bc3e-a11c-4531-8fc8-fda3ff37a819>
+
+
 
 ## 環境構築・起動方法
 
